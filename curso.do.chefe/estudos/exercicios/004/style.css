@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-45deg, #000428, #004e92, #000428, #004e92);
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
+    font-family: "Berkshire Swash", serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: rgb(192, 189, 189);
+}
+
+/* Float Animation */
+.float {
+    animation: float 4s ease-in-out infinite;
+    font-size: 4rem;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Typing Effect */
+.typing {
+    font-size: 2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.15em solid orange;
+    width: 0;
+    animation: typing 3s steps(15, end) 1s forwards;
+    margin-top: 1rem;
+    position: relative;
+}
+
+.cursor {
+    animation: blink 0.8s infinite;
+    position: absolute;
+}
+
+/* Button Styling */
+.btn {
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-family: inherit;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background: white;
+    color: #004e92;
+    transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 13ch } /* Ajuste para o tamanho de "Web Developer" */
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1 }
+    50% { opacity: 0 }
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}

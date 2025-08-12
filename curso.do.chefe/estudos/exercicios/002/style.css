@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Billabong';
+    src: url('Billabong.woff') format('woff');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    background-image: linear-gradient(to bottom, #585ACC, #8E39B3, #C32E91, #E03068, #F8722A, #FBAA51, #FEDA7C);
+    background-attachment: fixed;
+    font-family: 'Courgette', cursive;
+    overflow: hidden; /* 🔥 impede rolagem */
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* empilha h1 e img */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'courgette', cursive;
+    font-size: 48px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.container img {
+    width: 150px; /* ajustável */
+    height: auto;
+}

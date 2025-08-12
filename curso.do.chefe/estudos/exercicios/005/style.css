@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Bungee+Spice&family=Caveat:wght@400..700&family=Miniver&family=Noto+Sans+Arabic:wght@100..900&family=Passions+Conflict&family=Poppins:ital,wght@0,400;1,400;1,500;1,600&family=Rubik+Spray+Paint&display=swap');
+body{
+    font: normal 16px Arial, verdana, serif
+}
+
+h1, h2{
+    text-align: center;
+    font-family: "Berkshire Swash", serif;
+    text-shadow: 10px 10px 15px black;
+    text-decoration: underline;
+}
+p{
+    text-align: justify;
+    font-family: 'Courgette', cursive;
+    font-size: 18px;
+}
+
+    
