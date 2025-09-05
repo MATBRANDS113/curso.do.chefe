@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title></title>
+    <style>
+        fieldset > p > input{
+            margin: 10px;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>TESTE</h1>
+    <form action="cadastro.js" method="post">
+        <fieldset>
+            <legend>Sexo</legend>
+            <p>
+                <input type="radio" name="mas" id="ifem" value="m"> <label for="ifem">Feminino</label> <br>
+                <input type="radio" name="mas" id="imas" value="f"> <label for="imas">Masculino</label> <br>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <p>
+                <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futebol</label> <br>
+                <input type="checkbox" name="esvol" id="iesvol"> <label for="iesvol"> Volêi </label> <br>
+                <input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat"> Natação </label> <br>
+                <input type="checkbox" name="eshand" id="ieshand"> <label for="ieshand"> Handboll </label>
+            </p>
+        </fieldset>
+        
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
