@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Berkshire+Swash&family=Bungee+Spice&family=Caveat:wght@400..700&family=Miniver&family=Noto+Sans+Arabic:wght@100..900&family=Passion+One:wght@400;700;900&family=Passions+Conflict&family=Poppins:ital,wght@0,400;1,400;1,500;1,600&family=Rubik+Spray+Paint&family=Sriracha&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+header {
+  background-color: #004D8E;
+  display: flex;              /* coloca logo e form lado a lado */
+  align-items: center;        /* alinha verticalmente */
+  justify-content: space-between; /* separa logo e busca */
+  padding: 10px 20px;
+}
+
+header img {
+  width: 120px;
+  height: auto;
+  padding: 3px;
+}
+#img-login{
+    width: 35px;
+    
+}
+header p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   
+}
+
+
+
+header form {
+  flex-grow: 1;               /* deixa o form ocupar o espaço que sobra */
+  margin-left: 100px;          /* afasta da logo */
+  align-items: center;
+}
+
+header input[type="search"] {
+  width: 100%;                /* ocupa toda a largura disponível do form */
+  max-width: 800px;           /* limite de tamanho */
+  padding: 8px 12px;          /* aumenta a altura e dá respiro */
+  border-radius: 4px;
+  border: none;
+}
+h1{
+    background-color: #F17A28;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.411);
+    padding-left: 15px;
+    padding: 5px;
+    text-align: center;
+}
+
+  
+
+
+.products-container {
+  display: flex;        /* coloca os cards na horizontal */
+  flex-wrap: wrap;      /* se não couber, vai para a linha de baixo */
+  gap: 20px;            /* espaço entre os cards */
+  justify-content: center; /* centraliza os cards na tela */
+}
+
+.product-card {
+  width: 250px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+.product-card img {
+  width: 289px;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+.product-card #placadevideo {
+  width: 212px;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+
+.product-card .tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #007bff;
+  color: white;
+  padding: 3px 8px;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+.product-card h3 {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.product-card .price {
+  margin: 10px 0;
+}
+
+.product-card .old-price {
+  text-decoration: line-through;
+  color: gray;
+  font-size: 12px;
+  display: block;
+}
+
+.product-card .new-price {
+  color: #e60000;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.product-card button {
+  background-color: orange;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.product-card button:hover {
+  background-color: darkorange;
+}
+
