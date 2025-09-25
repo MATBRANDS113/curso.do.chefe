@@ -49,7 +49,7 @@ menu a:hover{
 main{
     margin: auto;
     background-color: white;
-    width: 80vw;
+    width: 70vw;
     height: auto;
     border-radius: 20px;
     padding: 10px;
@@ -80,6 +80,6 @@ i#burger{
 }
 
 i#burger:hover{
-    background-color: white;
+    background-color: rgb(216, 216, 216);
     color: black;
 }
